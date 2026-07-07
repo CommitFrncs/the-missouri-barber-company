@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Missouri Barber Company — Sedalia's premier barbershop for classic haircuts, beard grooming, and hot towel shaves. Walk in or book online.">
+  <title>The Missouri Barber Company | Premium Barbershop in Sedalia, MO</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Skip Navigation -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Header / Navigation -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="/" class="header__logo">
+        <span class="header__logo-icon" aria-hidden="true">&#9996;</span>
+        <span class="header__logo-text">The Missouri Barber Co.</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Main navigation">
+        <ul class="nav__list" id="navList">
+          <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#barbers" class="nav__link">Barbers</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <a href="tel:+16608512244" class="header__phone">
+          <i class="fas fa-phone-alt" aria-hidden="true"></i>
+          <span>(660) 851-2244</span>
+        </a>
+        <a href="#contact" class="btn btn--primary btn--sm header__cta">Book Now</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero__overlay"></div>
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__content">
+        <p class="hero__subtitle">Est. in Sedalia</p>
+        <h1 class="hero__title">The Missouri<br>Barber Company</h1>
+        <p class="hero__tagline">Classic cuts, straight-razor shaves, and old-school craftsmanship — right here in Sedalia.</p>
+        <div class="hero__actions">
+          <a href="tel:+16608512244" class="btn btn--primary btn--lg">
+            <i class="fas fa-phone-alt" aria-hidden="true"></i>
+            Call (660) 851-2244
+          </a>
+          <a href="#services" class="btn btn--outline btn--lg">Our Services</a>
+        </div>
+      </div>
+      <div class="hero__scroll" aria-hidden="true">
+        <span>Scroll</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__label">What We Offer</span>
+          <h2 class="section__title" id="services-title">Premium Barber Services</h2>
+          <p class="section__desc">From a quick tidy-up to the full treatment — our barbers deliver precision cuts and classic grooming with every visit.</p>
+        </div>
+
+        <div class="services__grid">
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <i class="fas fa-cut"></i>
+            </div>
+            <h3 class="service-card__title">Classic Haircuts</h3>
+            <p class="service-card__desc">Scissor or clipper — tailored to your style with a hot towel finish.</p>
+            <span class="service-card__price">From $28</span>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <i class="fas fa-user-tie"></i>
+            </div>
+            <h3 class="service-card__title">Beard Grooming</h3>
+            <p class="service-card__desc">Shape, trim, and condition your beard for a crisp, clean look.</p>
+            <span class="service-card__price">From $22</span>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <i class="fas fa-hot-tub"></i>
+            </div>
+            <h3 class="service-card__title">Hot Towel Shave</h3>
+            <p class="service-card__desc">A traditional straight-razor shave with steaming hot towels and premium cream.</p>
+            <span class="service-card__price">From $35</span>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <i class="fas fa-child"></i>
+            </div>
+            <h3 class="service-card__title">Kids' Cuts</h3>
+            <p class="service-card__desc">Patient, friendly service for even the wiggliest little ones.</p>
+            <span class="service-card__price">From $18</span>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <i class="fas fa-magic"></i>
+            </div>
+            <h3 class="service-card__title">Hair Styling</h3>
+            <p class="service-card__desc">Product application, blow-dry, and finish for any occasion.</p>
+            <span class="service-card__price">From $15</span>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <i class="fas fa-gem"></i>
+            </div>
+            <h3 class="service-card__title">The Full Package</h3>
+            <p class="service-card__desc">Haircut + beard trim + hot towel shave. Our signature experience.</p>
+            <span class="service-card__price">From $60</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About / Why Choose Us Section -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="about__grid">
+          <div class="about__visual" aria-hidden="true">
+            <img src="assets/images/interior-1.jpg" alt="Interior of The Missouri Barber Company showing classic barber chairs" loading="lazy">
+          </div>
+          <div class="about__content">
+            <span class="section__label">Why Sedalia Chooses Us</span>
+            <h2 class="section__title" id="about-title">Old-School Craft, Modern Comfort</h2>
+            <p class="about__text">The Missouri Barber Company brings together time-honored barbering traditions with a clean, welcoming space. Whether you're after a quick trim or the full straight-razor treatment, you'll find barbers who take pride in their work.</p>
+
+            <div class="about__features">
+              <div class="about__feature">
+                <i class="fas fa-check-circle" aria-hidden="true"></i>
+                <div>
+                  <h3>Trusted Local Barbers</h3>
+                  <p>Skilled professionals who know their craft and take the time to get it right.</p>
+                </div>
+              </div>
+              <div class="about__feature">
+                <i class="fas fa-check-circle" aria-hidden="true"></i>
+                <div>
+                  <h3>Premium Products</h3>
+                  <p>Top-tier pomades, beard oils, and grooming essentials used on every client.</p>
+                </div>
+              </div>
+              <div class="about__feature">
+                <i class="fas fa-check-circle" aria-hidden="true"></i>
+                <div>
+                  <h3>Clean & Comfortable</h3>
+                  <p>A relaxed, sanitized environment where every chair feels like the best seat in the house.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="about__stats">
+              <div class="stat">
+                <span class="stat__number" data-count="500">0</span>
+                <span class="stat__label">Happy Clients</span>
+              </div>
+              <div class="stat">
+                <span class="stat__number" data-count="6">0</span>
+                <span class="stat__label">Years Serving Sedalia</span>
+              </div>
+              <div class="stat">
+                <span class="stat__number" data-count="5.0">5.0</span>
+                <span class="stat__label">Star Rating</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Barbers Section -->
+    <section class="section barbers" id="barbers" aria-labelledby="barbers-title">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__label">Meet the Team</span>
+          <h2 class="section__title" id="barbers-title">Your Barbers</h2>
+          <p class="section__desc">Talented barbers who bring skill, personality, and a steady hand to every chair.</p>
+        </div>
+
+        <div class="barbers__grid">
+          <article class="barber-card">
+            <div class="barber-card__img" aria-hidden="true">
+              <img src="assets/images/hero-bg.jpg" alt="Barber at work in the shop" loading="lazy">
+            </div>
+            <div class="barber-card__body">
+              <h3 class="barber-card__name">Marcus Johnson</h3>
+              <span class="barber-card__role">Head Barber</span>
+              <p class="barber-card__bio">Classic cuts, fades, and hot towel shaves. Marcus leads the team with over a decade of experience.</p>
+            </div>
+          </article>
+
+          <article class="barber-card">
+            <div class="barber-card__img" aria-hidden="true">
+              <img src="assets/images/interior-2.jpg" alt="Inside The Missouri Barber Company shop" loading="lazy">
+            </div>
+            <div class="barber-card__body">
+              <h3 class="barber-card__name">David Reeves</h3>
+              <span class="barber-card__role">Master Barber</span>
+              <p class="barber-card__bio">Specializing in beard artistry and detailed grooming. David's precision work keeps clients coming back.</p>
+            </div>
+          </article>
+
+          <article class="barber-card">
+            <div class="barber-card__img" aria-hidden="true">
+              <img src="assets/images/hero-bg.jpg" alt="Barber station at The Missouri Barber Company" loading="lazy">
+            </div>
+            <div class="barber-card__body">
+              <h3 class="barber-card__name">Chris Walker</h3>
+              <span class="barber-card__role">Barber & Stylist</span>
+              <p class="barber-card__bio">Modern styles and classic cuts — Chris works with every hair type to give you a look that fits.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Area Section -->
+    <section class="section area" id="area" aria-labelledby="area-title">
+      <div class="container">
+        <div class="area__card">
+          <div class="area__content">
+            <span class="section__label">Service Area</span>
+            <h2 class="section__title" id="area-title">Serving Sedalia & Beyond</h2>
+            <p>
+              We're conveniently located on <strong>West Broadway Blvd</strong> in the heart of Sedalia, serving clients from across
+              Pettis County and the surrounding communities. Whether you're a longtime local or just passing through,
+              stop in — the chair is ready.
+            </p>
+            <ul class="area__list">
+              <li><i class="fas fa-location-dot" aria-hidden="true"></i> 520 W Broadway Blvd, Sedalia, MO 65301</li>
+              <li><i class="fas fa-clock" aria-hidden="true"></i> Walk-ins welcome — call ahead for priority</li>
+            </ul>
+            <a href="https://maps.google.com/?q=520+W+Broadway+Blvd+Sedalia+MO+65301" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+              <i class="fas fa-map-pin" aria-hidden="true"></i>
+              Get Directions
+            </a>
+          </div>
+          <div class="area__map" aria-hidden="true">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3097.5!2d-93.2345!3d38.7042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c641edf4b2b3e5%3A0x9f8d6e7a5c4b3a2f!2s520%20W%20Broadway%20Blvd%2C%20Sedalia%2C%20MO%2065301!5e0!3m2!1sen!2sus!4v1"
+              width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+              title="Map showing The Missouri Barber Company location in Sedalia, MO">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact / CTA Section -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__label">Get in Touch</span>
+          <h2 class="section__title" id="contact-title">Book Your Appointment</h2>
+          <p class="section__desc">Give us a call or stop by — we'll get you in the chair and looking sharp.</p>
+        </div>
+
+        <div class="contact__grid">
+          <div class="contact__info">
+            <div class="contact__card">
+              <i class="fas fa-phone-alt" aria-hidden="true"></i>
+              <div>
+                <h3>Call Us</h3>
+                <a href="tel:+16608512244" class="contact__link">(660) 851-2244</a>
+              </div>
+            </div>
+            <div class="contact__card">
+              <i class="fas fa-envelope" aria-hidden="true"></i>
+              <div>
+                <h3>Email</h3>
+                <a href="mailto:info@mobarberco.com" class="contact__link">info@mobarberco.com</a>
+              </div>
+            </div>
+            <div class="contact__card">
+              <i class="fas fa-location-dot" aria-hidden="true"></i>
+              <div>
+                <h3>Location</h3>
+                <address class="contact__address">
+                  520 W Broadway Blvd<br>
+                  Sedalia, MO 65301
+                </address>
+              </div>
+            </div>
+            <div class="contact__card">
+              <i class="fas fa-clock" aria-hidden="true"></i>
+              <div>
+                <h3>Hours</h3>
+                <ul class="contact__hours">
+                  <li><span>Mon – Fri</span><span>9:00 AM – 7:00 PM</span></li>
+                  <li><span>Saturday</span><span>9:00 AM – 5:00 PM</span></li>
+                  <li><span>Sunday</span><span>Closed</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact__form" id="contactForm" novalidate>
+            <div class="form__group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required>
+              <span class="form__error" role="alert"></span>
+            </div>
+            <div class="form__group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required>
+              <span class="form__error" role="alert"></span>
+            </div>
+            <div class="form__group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="(660) 555-0123" required>
+              <span class="form__error" role="alert"></span>
+            </div>
+            <div class="form__group">
+              <label for="service">Interested In</label>
+              <select id="service" name="service">
+                <option value="">Select a service…</option>
+                <option value="haircut">Classic Haircut</option>
+                <option value="beard">Beard Grooming</option>
+                <option value="shave">Hot Towel Shave</option>
+                <option value="kids">Kids' Cut</option>
+                <option value="package">The Full Package</option>
+              </select>
+            </div>
+            <div class="form__group">
+              <label for="message">Message (Optional)</label>
+              <textarea id="message" name="message" rows="3" placeholder="Preferred date/time or special requests…"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--lg btn--full">
+              <i class="fas fa-calendar-check" aria-hidden="true"></i>
+              Send Request
+            </button>
+            <p class="form__footnote">We'll confirm your appointment within a few hours.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <span class="footer__logo">The Missouri Barber Co.</span>
+          <p class="footer__tagline">Classic cuts. Straight-razor shaves. Sedalia's finest.</p>
+        </div>
+
+        <div class="footer__nav">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#barbers">Barbers</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__contact">
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="tel:+16608512244">(660) 851-2244</a></li>
+            <li>520 W Broadway Blvd</li>
+            <li>Sedalia, MO 65301</li>
+          </ul>
+        </div>
+
+        <div class="footer__social">
+          <h3>Follow Us</h3>
+          <div class="footer__social-links">
+            <a href="#" aria-label="Facebook" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Google Business Profile" class="social-link"><i class="fab fa-google"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2026 The Missouri Barber Company. All rights reserved.</p>
+        <p class="footer__credit">Built with pride for Sedalia, MO.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top" aria-hidden="true">
+    <i class="fas fa-chevron-up" aria-hidden="true"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
