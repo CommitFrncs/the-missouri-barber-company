@@ -351,10 +351,12 @@ ul { list-style: none; }
     transition: transform var(--transition);
     z-index: 100;
     transform: translateX(100%);
+    visibility: hidden;
   }
 
   .nav.open {
     transform: translateX(0);
+    visibility: visible;
   }
 
   .nav__list {
