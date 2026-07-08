@@ -799,7 +799,8 @@ ul { list-style: none; }
 }
 
 .contact__grid {
-  display: grid;
+  width: 80vh;
+  content: flexbox;
   grid-template-columns: 1fr;
   gap: 2.5rem;
   max-width: var(--container-narrow);
