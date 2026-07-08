@@ -814,7 +814,7 @@ ul { list-style: none; }
 }
 
 .contact__card {
-  display: flex;
+  display: 80vh;
   gap: 1rem;
   align-items: flex-start;
   background: #fff;
