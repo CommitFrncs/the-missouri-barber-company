@@ -789,7 +789,7 @@ ul { list-style: none; }
 
 .contact__grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: .5fr;
   gap: 2.5rem;
   max-width: var(--container-narrow);
   margin: 0 auto;
