@@ -23,7 +23,7 @@
   <!-- Header / Navigation -->
   <header class="header" id="header">
     <div class="container header__inner">
-      <a href="/" class="header__logo">
+      <a href="index.html" class="header__logo">
         <span class="header__logo-icon" aria-hidden="true">&#9996;</span>
         <span class="header__logo-text">The Missouri Barber Co.</span>
       </a>
@@ -42,7 +42,7 @@
           <i class="fas fa-phone-alt" aria-hidden="true"></i>
           <span>(660) 851-2244</span>
         </a>
-        <a href="#contact" class="btn btn--primary btn--sm header__cta">Book Now</a>
+        <a href="#" class="btn btn--primary btn--sm header__cta" data-open-modal>Book Now</a>
         <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
           <span class="nav-toggle__bar"></span>
           <span class="nav-toggle__bar"></span>
@@ -62,7 +62,11 @@
         <h1 class="hero__title">The Missouri<br>Barber Company</h1>
         <p class="hero__tagline">Classic cuts, straight-razor shaves, and old-school craftsmanship — right here in Sedalia.</p>
         <div class="hero__actions">
-          <a href="tel:+16608512244" class="btn btn--primary btn--lg">
+          <a href="#" class="btn btn--primary btn--lg" data-open-modal>
+            <i class="fas fa-calendar-check" aria-hidden="true"></i>
+            Book Now
+          </a>
+          <a href="tel:+16608512244" class="btn btn--outline btn--lg">
             <i class="fas fa-phone-alt" aria-hidden="true"></i>
             Call (660) 851-2244
           </a>
@@ -91,52 +95,58 @@
             </div>
             <h3 class="service-card__title">Classic Haircuts</h3>
             <p class="service-card__desc">Scissor or clipper — tailored to your style with a hot towel finish.</p>
-            <span class="service-card__price">From $28</span>
+            <p class="service-card__duration">30 min</p>
+            <span class="service-card__price">From $20</span>
           </article>
 
           <article class="service-card">
             <div class="service-card__icon" aria-hidden="true">
               <i class="fas fa-user-tie"></i>
             </div>
-            <h3 class="service-card__title">Beard Grooming</h3>
-            <p class="service-card__desc">Shape, trim, and condition your beard for a crisp, clean look.</p>
-            <span class="service-card__price">From $22</span>
+            <h3 class="service-card__title">Beard Trim</h3>
+            <p class="service-card__desc">Precision trimming for a clean, well-groomed look.</p>
+            <p class="service-card__duration">15 min</p>
+            <span class="service-card__price">From $12</span>
           </article>
 
           <article class="service-card">
             <div class="service-card__icon" aria-hidden="true">
               <i class="fas fa-hot-tub"></i>
             </div>
-            <h3 class="service-card__title">Hot Towel Shave</h3>
-            <p class="service-card__desc">A traditional straight-razor shave with steaming hot towels and premium cream.</p>
-            <span class="service-card__price">From $35</span>
+            <h3 class="service-card__title">Haircut & Beard Trim</h3>
+            <p class="service-card__desc">Get a fresh haircut and a precise beard trim in one visit.</p>
+            <p class="service-card__duration">30 min</p>
+            <span class="service-card__price">From $27</span>
           </article>
 
           <article class="service-card">
             <div class="service-card__icon" aria-hidden="true">
               <i class="fas fa-child"></i>
             </div>
-            <h3 class="service-card__title">Kids' Cuts</h3>
-            <p class="service-card__desc">Patient, friendly service for even the wiggliest little ones.</p>
-            <span class="service-card__price">From $18</span>
+            <h3 class="service-card__title">Shave</h3>
+            <p class="service-card__desc">Experience the classic straight-razor shave with steaming hot towels and premium cream.</p>
+            <p class="service-card__duration">30 min</p>
+            <span class="service-card__price">From $20</span>
           </article>
 
           <article class="service-card">
             <div class="service-card__icon" aria-hidden="true">
               <i class="fas fa-magic"></i>
             </div>
-            <h3 class="service-card__title">Hair Styling</h3>
-            <p class="service-card__desc">Product application, blow-dry, and finish for any occasion.</p>
-            <span class="service-card__price">From $15</span>
+            <h3 class="service-card__title">Haircut & Shave</h3>
+            <p class="service-card__desc">Get a fresh haircut and a classic straight-razor shave in one visit.</p>
+            <p class="service-card__duration">45 min</p>
+            <span class="service-card__price">From $34</span>
           </article>
 
           <article class="service-card">
             <div class="service-card__icon" aria-hidden="true">
               <i class="fas fa-gem"></i>
             </div>
-            <h3 class="service-card__title">The Full Package</h3>
-            <p class="service-card__desc">Haircut + beard trim + hot towel shave. Our signature experience.</p>
-            <span class="service-card__price">From $60</span>
+            <h3 class="service-card__title">Wax</h3>
+            <p class="service-card__desc">Professional waxing for smooth, hair-free skin.</p>
+            <p class="service-card__duration">15 min</p>
+            <span class="service-card__price">From $12</span>
           </article>
         </div>
       </div>
@@ -184,11 +194,11 @@
                 <span class="stat__label">Happy Clients</span>
               </div>
               <div class="stat">
-                <span class="stat__number" data-count="6">0</span>
+                <span class="stat__number" data-count="4">0</span>
                 <span class="stat__label">Years Serving Sedalia</span>
               </div>
               <div class="stat">
-                <span class="stat__number" data-count="5.0">5.0</span>
+                <span class="stat__number" data-count="4.9">5.0</span>
                 <span class="stat__label">Star Rating</span>
               </div>
             </div>
@@ -209,34 +219,45 @@
         <div class="barbers__grid">
           <article class="barber-card">
             <div class="barber-card__img" aria-hidden="true">
-              <img src="assets/images/hero-bg.jpg" alt="Barber at work in the shop" loading="lazy">
+              <img src="assets/images/stephanie.jpg" alt="Barber at work in the shop" loading="lazy">
             </div>
             <div class="barber-card__body">
-              <h3 class="barber-card__name">Marcus Johnson</h3>
-              <span class="barber-card__role">Head Barber</span>
-              <p class="barber-card__bio">Classic cuts, fades, and hot towel shaves. Marcus leads the team with over a decade of experience.</p>
+              <h3 class="barber-card__name">Stephanie</h3>
+              <span class="barber-card__role">Barber</span>
+              <p class="barber-card__bio">Clean fades, precise scissor work, and a friendly chair-side manner. Stephanie has been barbering for over six years and knows exactly how to bring your vision to life.</p>
             </div>
           </article>
 
           <article class="barber-card">
             <div class="barber-card__img" aria-hidden="true">
-              <img src="assets/images/interior-2.jpg" alt="Inside The Missouri Barber Company shop" loading="lazy">
+              <img src="assets/images/josh.jpeg" alt="Inside The Missouri Barber Company shop" loading="lazy">
             </div>
             <div class="barber-card__body">
-              <h3 class="barber-card__name">David Reeves</h3>
-              <span class="barber-card__role">Master Barber</span>
-              <p class="barber-card__bio">Specializing in beard artistry and detailed grooming. David's precision work keeps clients coming back.</p>
+              <h3 class="barber-card__name">Josh</h3>
+              <span class="barber-card__role">Barber</span>
+              <p class="barber-card__bio">From classic taper fades to modern textured cuts, Josh brings attention to detail and a steady hand to every appointment.</p>
             </div>
           </article>
 
           <article class="barber-card">
             <div class="barber-card__img" aria-hidden="true">
-              <img src="assets/images/hero-bg.jpg" alt="Barber station at The Missouri Barber Company" loading="lazy">
+              <img src="assets/images/jason.jpg" alt="Barber station at The Missouri Barber Company" loading="lazy">
             </div>
             <div class="barber-card__body">
-              <h3 class="barber-card__name">Chris Walker</h3>
-              <span class="barber-card__role">Barber & Stylist</span>
-              <p class="barber-card__bio">Modern styles and classic cuts — Chris works with every hair type to give you a look that fits.</p>
+              <h3 class="barber-card__name">Jason</h3>
+              <span class="barber-card__role">Barber</span>
+              <p class="barber-card__bio">Jason specializes in traditional straight-razor shaves and beard sculpting — every service finished with a hot towel and a smile.</p>
+            </div>
+          </article>
+
+          <article class="barber-card">
+            <div class="barber-card__img" aria-hidden="true">
+              <img src="assets/images/rory.jpg" alt="Inside The Missouri Barber Company shop" loading="lazy">
+            </div>
+            <div class="barber-card__body">
+              <h3 class="barber-card__name">Rory</h3>
+              <span class="barber-card__role">Barber</span>
+              <p class="barber-card__bio">The newest addition to the team, Rory brings fresh energy and sharp skills in clipper work and modern styling that clients of all ages love.</p>
             </div>
           </article>
         </div>
@@ -297,7 +318,7 @@
               <i class="fas fa-envelope" aria-hidden="true"></i>
               <div>
                 <h3>Email</h3>
-                <a href="mailto:info@mobarberco.com" class="contact__link">info@mobarberco.com</a>
+                <a href="mailto:mobarberco@gmail.com" class="contact__link">mobarberco@gmail.com</a>
               </div>
             </div>
             <div class="contact__card">
@@ -396,9 +417,9 @@
         <div class="footer__social">
           <h3>Follow Us</h3>
           <div class="footer__social-links">
-            <a href="#" aria-label="Facebook" class="social-link"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" aria-label="Instagram" class="social-link"><i class="fab fa-instagram"></i></a>
-            <a href="#" aria-label="Google Business Profile" class="social-link"><i class="fab fa-google"></i></a>
+            <a href="https://web.facebook.com/MissouriBarberCompany/?_rdc=1&_rdr#" aria-label="Facebook" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/missouribarberco/" aria-label="Instagram" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.google.com/maps/place/The+Missouri+Barber+Company/@38.7047372,-93.2363152,17z/data=!3m1!4b1!4m6!3m5!1s0x87c3853a6951b081:0x9a95456de402ac2a!8m2!3d38.704733!4d-93.2337349!16s%2Fg%2F11pv0jfxqq?entry=ttu&g_ep=EgoyMDI2MDcwNS4wIKXMDSoASAFQAw%3D%3D" aria-label="Google Business Profile" class="social-link"><i class="fab fa-google"></i></a>
           </div>
         </div>
       </div>
@@ -414,6 +435,126 @@
   <button class="back-to-top" id="backToTop" aria-label="Back to top" aria-hidden="true">
     <i class="fas fa-chevron-up" aria-hidden="true"></i>
   </button>
+
+  <!-- Booking Modal -->
+  <div class="modal-overlay" id="bookingModal" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-label="Book an appointment">
+
+      <div class="modal__header">
+        <button class="modal__back is-hidden" id="modalBack" aria-label="Go back">
+          <i class="fas fa-arrow-left"></i>
+        </button>
+        <h2 class="modal__title">Book Appointment</h2>
+        <button class="modal__close" id="modalClose" aria-label="Close booking modal">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <!-- Step indicator -->
+      <div class="modal__steps" id="modalSteps">
+        <span class="modal__step-indicator" data-step="1">
+          <span class="modal__step-num">1</span>
+          <span class="modal__step-label">Service</span>
+        </span>
+        <span class="modal__connector" aria-hidden="true"></span>
+        <span class="modal__step-indicator" data-step="2">
+          <span class="modal__step-num">2</span>
+          <span class="modal__step-label">Barber</span>
+        </span>
+        <span class="modal__connector" aria-hidden="true"></span>
+        <span class="modal__step-indicator" data-step="3">
+          <span class="modal__step-num">3</span>
+          <span class="modal__step-label">Date &#038; Time</span>
+        </span>
+        <span class="modal__connector" aria-hidden="true"></span>
+        <span class="modal__step-indicator" data-step="4">
+          <span class="modal__step-num">4</span>
+          <span class="modal__step-label">Details</span>
+        </span>
+      </div>
+
+      <div class="modal__body" id="modalBody">
+
+        <!-- Step 1: Select Service -->
+        <div class="modal__panel" id="modalStep1">
+          <h3 class="modal__panel-title">Select a Service</h3>
+          <p class="modal__panel-desc">Select one or more services to book today.</p>
+          <div class="modal__options" id="modalServices"></div>
+          <div class="modal__total-bar" id="modalTotalBar">
+            <span id="modalTotalText">No services selected</span>
+          </div>
+          <div class="modal__step-footer">
+            <button class="btn btn--primary btn--lg btn--full" id="modalStep1Continue" disabled>
+              Continue <i class="fas fa-arrow-right" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Step 2: Select Barber -->
+        <div class="modal__panel" id="modalStep2">
+          <h3 class="modal__panel-title">Select a Professional</h3>
+          <p class="modal__panel-desc">Pick your preferred barber, or choose maximum availability.</p>
+          <div class="modal__options" id="modalBarbers"></div>
+        </div>
+
+        <!-- Step 3: Select Date & Time -->
+        <div class="modal__panel" id="modalStep3">
+          <h3 class="modal__panel-title">Select Date &#038; Time</h3>
+          <p class="modal__panel-desc">Pick a day and time that works for you.</p>
+          <div class="date-strip" id="dateStrip"></div>
+          <div class="time-slots" id="timeSlots"></div>
+        </div>
+
+        <!-- Step 4: Contact Details -->
+        <div class="modal__panel" id="modalStep4">
+          <h3 class="modal__panel-title">Your Details</h3>
+          <p class="modal__panel-desc">We&#8217;ll send your confirmation here.</p>
+          <div class="modal__summary" id="bookingSummary"></div>
+          <form class="modal__form" id="bookingForm" novalidate>
+            <div class="form__group">
+              <label for="bookName">Full Name <span class="required">*</span></label>
+              <input type="text" id="bookName" name="name" placeholder="John Doe" required>
+              <span class="form__error" role="alert"></span>
+            </div>
+            <div class="form__group">
+              <label for="bookEmail">Email Address <span class="required">*</span></label>
+              <input type="email" id="bookEmail" name="email" placeholder="john@example.com" required>
+              <span class="form__error" role="alert"></span>
+            </div>
+            <div class="form__group">
+              <label for="bookPhone">Phone Number <span class="required">*</span></label>
+              <input type="tel" id="bookPhone" name="phone" placeholder="(660) 555-0123" required>
+              <span class="form__error" role="alert"></span>
+            </div>
+            <div class="form__group">
+              <label for="bookMessage">Message <span class="optional">(Optional)</span></label>
+              <textarea id="bookMessage" name="message" rows="3" placeholder="Special requests or preferred time&#8230;"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--lg btn--full">
+              <i class="fas fa-calendar-check" aria-hidden="true"></i>
+              Request Appointment
+            </button>
+          </form>
+        </div>
+
+        <!-- Confirmation -->
+        <div class="modal__panel" id="modalConfirm">
+          <div class="modal__confirm-content">
+            <div class="modal__confirm-icon" aria-hidden="true">
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <h3 class="modal__panel-title">Request Received!</h3>
+            <p class="modal__panel-desc">We&#8217;ll confirm your appointment shortly. You&#8217;ll hear from us within a few hours.</p>
+            <button class="btn btn--primary btn--lg" id="modalConfirmClose">
+              <i class="fas fa-thumbs-up" aria-hidden="true"></i>
+              Got it
+            </button>
+          </div>
+        </div>
+
+      </div><!-- /modal__body -->
+    </div><!-- /modal -->
+  </div><!-- /modal-overlay -->
 
   <script src="script.js"></script>
 </body>
