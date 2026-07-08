@@ -381,17 +381,6 @@ ul { list-style: none; }
     background: rgba(0, 0, 0, 0.5);
     z-index: 99;
   }
-
-  .header {
-    width: 100vw;
-    max-width: 100%;
-    overflow-x: hidden;
-  }
-
-  .header__inner {
-    width: 100%;
-    max-width: 100%;
-  }
 }
 
 /* ============================================
@@ -799,7 +788,7 @@ ul { list-style: none; }
 }
 
 .contact__grid {
-  width: 80vw;
+  display: grid;
   grid-template-columns: 1fr;
   gap: 2.5rem;
   max-width: var(--container-narrow);
@@ -813,7 +802,7 @@ ul { list-style: none; }
 }
 
 .contact__card {
-  display: 80vw;
+  display: flex;
   gap: 1rem;
   align-items: flex-start;
   background: #fff;
