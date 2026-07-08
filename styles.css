@@ -352,6 +352,7 @@ ul { list-style: none; }
     z-index: 100;
     transform: translateX(100%);
     visibility: hidden;
+    contain: layout;
   }
 
   .nav.open {
@@ -379,6 +380,17 @@ ul { list-style: none; }
     inset: 0;
     background: rgba(0, 0, 0, 0.5);
     z-index: 99;
+  }
+
+  .header {
+    width: 100vw;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .header__inner {
+    width: 100%;
+    max-width: 100%;
   }
 }
 
