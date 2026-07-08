@@ -799,8 +799,7 @@ ul { list-style: none; }
 }
 
 .contact__grid {
-  width: 80vh;
-  content: flexbox;
+  width: 80vw;
   grid-template-columns: 1fr;
   gap: 2.5rem;
   max-width: var(--container-narrow);
@@ -814,7 +813,7 @@ ul { list-style: none; }
 }
 
 .contact__card {
-  display: 80vh;
+  display: 80vw;
   gap: 1rem;
   align-items: flex-start;
   background: #fff;
