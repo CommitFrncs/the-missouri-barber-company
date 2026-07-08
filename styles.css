@@ -342,18 +342,19 @@ ul { list-style: none; }
   .nav {
     position: fixed;
     top: 0;
-    right: -100%;
+    right: 0;
     width: 75%;
     max-width: 320px;
     height: 100vh;
     background: var(--color-bg-dark);
     padding: 6rem 2rem 2rem;
-    transition: right var(--transition);
+    transition: transform var(--transition);
     z-index: 100;
+    transform: translateX(100%);
   }
 
   .nav.open {
-    right: 0;
+    transform: translateX(0);
   }
 
   .nav__list {
