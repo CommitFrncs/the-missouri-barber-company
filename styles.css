@@ -927,10 +927,29 @@ ul { list-style: none; }
   text-align: center;
   margin-top: 1rem;
 }*/
-
 /* ============================================
    Contact Section
    ============================================ */
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+@media (max-width: 767px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
 
 .contact-section {
   padding: 5rem 0;
@@ -965,7 +984,7 @@ ul { list-style: none; }
   align-items: flex-start;
   gap: 1rem;
   padding: 1.25rem;
-  background: var(--color-bg-alt, #f7f4ef);
+  background: var(--color-bg);
   border: 1px solid var(--color-border, #e5e0d8);
   border-radius: 8px;
   min-width: 0;
@@ -1100,9 +1119,25 @@ ul { list-style: none; }
 }
 
 .contact-form .btn {
-  width: 100%;
+  display: block;
+  width: 80%;
+  margin: 1rem auto 0;
+  padding: 0.85rem 1.5rem;
+  background: var(--color-accent);
+  color: #fff;
+  border-color: var(--color-accent);
   box-sizing: border-box;
-  margin-top: 0.5rem;
+}
+
+.contact-form .btn:hover {
+  background: var(--color-accent-hover);
+  border-color: var(--color-accent-hover);
+  color: #fff;
+}
+
+.contact-form .btn:focus-visible {
+  outline: 3px solid rgba(201, 169, 110, 0.35);
+  outline-offset: 2px;
 }
 
 /* ============================================
