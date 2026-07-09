@@ -782,7 +782,7 @@ ul { list-style: none; }
 
 /* ============================================
    Contact
-   ============================================ */
+   ============================================ 
 .contact {
   background: var(--color-bg);
 }
@@ -859,7 +859,7 @@ ul { list-style: none; }
   font-weight: 500;
 }
 
-/* Contact form */
+/* Contact form 
 .contact__form {
   background: #fff;
   border: 1px solid var(--color-border);
@@ -926,6 +926,183 @@ ul { list-style: none; }
   color: var(--color-text-light);
   text-align: center;
   margin-top: 1rem;
+}*/
+
+/* ============================================
+   Contact Section
+   ============================================ */
+
+.contact-section {
+  padding: 5rem 0;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  width: 100%;
+  max-width: 100%;
+}
+
+@media (max-width: 767px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/* ---- Contact info column ---- */
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  min-width: 0; /* prevents grid children from refusing to shrink below content size */
+}
+
+.contact-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.25rem;
+  background: var(--color-bg-alt, #f7f4ef);
+  border: 1px solid var(--color-border, #e5e0d8);
+  border-radius: 8px;
+  min-width: 0;
+}
+
+.contact-card i {
+  flex-shrink: 0;
+  font-size: 1.125rem;
+  color: var(--color-accent, #c9a45c);
+  margin-top: 0.2rem;
+}
+
+.contact-card > div {
+  min-width: 0; /* allows long email/address text to wrap instead of forcing width */
+  flex: 1;
+}
+
+.contact-card h3 {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+.contact-link {
+  color: var(--color-text, #2a2622);
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.contact-link:hover {
+  color: var(--color-accent, #c9a45c);
+}
+
+.contact-address {
+  font-style: normal;
+  line-height: 1.5;
+  color: var(--color-text-muted, #6b655c);
+}
+
+.contact-hours {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.contact-hours li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 0.9rem;
+  color: var(--color-text-muted, #6b655c);
+}
+
+.contact-hours li span:first-child {
+  color: var(--color-text, #2a2622);
+  font-weight: 500;
+}
+
+/* ---- Form column ---- */
+
+.contact-form {
+  min-width: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  width: 100%;
+  min-width: 0;
+}
+
+.form-group label {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 0.75rem 1rem;
+  font-family: inherit;
+  font-size: 0.9375rem;
+  border: 1.5px solid var(--color-border, #e5e0d8);
+  border-radius: 4px;
+  background: var(--color-bg, #fff);
+  color: var(--color-text, #2a2622);
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--color-accent, #c9a45c);
+}
+
+.form-group select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%236b655c' d='M1 1l5 5 5-5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  padding-right: 2.5rem;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.form-error {
+  font-size: 0.8rem;
+  color: #c0392b;
+  min-height: 1em;
+}
+
+.contact-form .btn {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 0.5rem;
 }
 
 /* ============================================

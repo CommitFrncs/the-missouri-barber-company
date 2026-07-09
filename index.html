@@ -296,96 +296,98 @@
         </div>
       </div>
     </section>
-    
-    <!-- Contact / CTA Section -->
-    <section class="section contact" id="contact" aria-labelledby="contact-title">
+
+  <!--Contact Section -->
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
       <div class="container">
-        <div class="section__header">
-          <span class="section__label">Get in Touch</span>
-          <h2 class="section__title" id="contact-title">Book Your Appointment</h2>
-          <p class="section__desc">Give us a call or stop by — we'll get you in the chair and looking sharp.</p>
+        <div class="section-head">
+          <span class="section-label">Get in Touch</span>
+          <h2 class="section-title" id="contact-title">Contact Us</h2>
+          <p class="section-desc">Have questions or want to book an appointment? Reach out to us via phone, email, or the form below. We look forward to hearing from you!</p>
         </div>
 
-        <div class="contact__grid">
-          <div class="contact__info">
-            <div class="contact__card">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="contact-card">
               <i class="fas fa-phone-alt" aria-hidden="true"></i>
               <div>
                 <h3>Call Us</h3>
-                <a href="tel:+16608512244" class="contact__link">(660) 851-2244</a>
+                <a href="tel:+16608512244" class="contact-link">(660) 851-2244</a>
               </div>
             </div>
-            <div class="contact__card">
+
+            <div class="contact-card">
               <i class="fas fa-envelope" aria-hidden="true"></i>
               <div>
                 <h3>Email</h3>
-                <a href="mailto:mobarberco@gmail.com" class="contact__link">mobarberco@gmail.com</a>
+                <a href="mailto:mobarberco@gmail.com" class="contact-link">mobarberco@gmail.com</a>
               </div>
             </div>
-            <div class="contact__card">
+
+            <div class="contact-card">
               <i class="fas fa-location-dot" aria-hidden="true"></i>
               <div>
                 <h3>Location</h3>
-                <address class="contact__address">
+                <address class="contact-address">
                   520 W Broadway Blvd<br>
                   Sedalia, MO 65301
                 </address>
               </div>
             </div>
-            <div class="contact__card">
+
+            <div class="contact-card">
               <i class="fas fa-clock" aria-hidden="true"></i>
               <div>
                 <h3>Hours</h3>
-                <ul class="contact__hours">
-                  <li><span>Mon – Fri</span><span>9:00 AM – 7:00 PM</span></li>
-                  <li><span>Saturday</span><span>9:00 AM – 5:00 PM</span></li>
-                  <li><span>Sunday</span><span>Closed</span></li>
+                <ul class="contact-hours">
+                  <li><span>Tue – Fri</span><span>8:00 AM – 5:00 PM</span></li>
+                  <li><span>Saturday</span><span>8:00 AM – 12:00 PM</span></li>
+                  <li><span>Sunday & Monday</span><span>Closed</span></li>
                 </ul>
               </div>
             </div>
           </div>
 
-          <form class="contact__form" id="contactForm" novalidate>
-            <div class="form__group">
-              <label for="name">Full Name</label>
-              <input type="text" id="name" name="name" placeholder="John Doe" required>
-              <span class="form__error" role="alert"></span>
+          <form class="contact-form" id="contactForm">
+            <div class="form-inputs">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required>
+                <span class="form-error" role="alert"></span>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                <span class="form-error" role="alert"></span>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="(660) 555-0123" required>
+                <span class="form-error" role="alert"></span>
+              </div>
+              <div class="form-group">
+                <label for="service">Interested In</label>
+                <select id="service" name="service">
+                  <option value="">Select a service…</option>
+                  <option value="haircut">Classic Haircut</option>
+                  <option value="beard">Beard Trim</option>
+                  <option value="haircut-beard">Haircut & Beard Trim</option>
+                  <option value="shave">Shave</option>
+                  <option value="haircut-shave">Haircut & Shave</option>
+                  <option value="wax">Wax</option>
+                  <option value="package">The Full Experience</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Message (Optional)</label>
+                <textarea id="message" name="message" rows="1" placeholder="Preferred date/time or special requests…"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
             </div>
-            <div class="form__group">
-              <label for="email">Email Address</label>
-              <input type="email" id="email" name="email" placeholder="john@example.com" required>
-              <span class="form__error" role="alert"></span>
-            </div>
-            <div class="form__group">
-              <label for="phone">Phone Number</label>
-              <input type="tel" id="phone" name="phone" placeholder="(660) 555-0123" required>
-              <span class="form__error" role="alert"></span>
-            </div>
-            <div class="form__group">
-              <label for="service">Interested In</label>
-              <select id="service" name="service">
-                <option value="">Select a service…</option>
-                <option value="haircut">Classic Haircut</option>
-                <option value="beard">Beard Grooming</option>
-                <option value="shave">Hot Towel Shave</option>
-                <option value="kids">Kids' Cut</option>
-                <option value="package">The Full Package</option>
-              </select>
-            </div>
-            <div class="form__group">
-              <label for="message">Message (Optional)</label>
-              <textarea id="message" name="message" rows="3" placeholder="Preferred date/time or special requests…"></textarea>
-            </div>
-            <button type="submit" class="btn btn--primary btn--lg btn--full">
-              <i class="fas fa-calendar-check" aria-hidden="true"></i>
-              Send Request
-            </button>
-            <p class="form__footnote">We'll confirm your appointment within a few hours.</p>
           </form>
         </div>
       </div>
     </section>
-  </main>
 
   <!-- Footer -->
   <footer class="footer">
